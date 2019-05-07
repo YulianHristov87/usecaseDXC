@@ -1,0 +1,94 @@
+﻿<%@ Master Language="VB" CodeFile="master1.master.vb" Inherits="master1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+            border-style: solid;
+            border-width: 2px;
+        }
+        .style2
+        {
+            height: 23px;
+            color: #CC3300;
+            font-family: Forte;
+            font-size: large;
+            font-weight: 700;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="abstract_0037.jpg">
+    <form id="form1" runat="server">
+    <br />
+    <table class="style1" align = " center" width = 80%>
+        <tr>
+            <td width="100%">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <asp:Label ID="Label1" runat="server" Height="77px" 
+                    style="font-family: Forte; font-size: 50pt; color: #800000" 
+                    Text="Employee Information system " Width="100%"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+                    style="font-size: xx-large; color: #800000;" ForeColor ="#CC3300" >
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Admin/Alogin.aspx" Text="Admin" Value="Admin">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Employee side" Value="Employee side">
+                            <asp:MenuItem NavigateUrl="~/Employee.aspx" Text="Employee registration" 
+                                Value="Employee registration"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/show.aspx" Text="Show Employee details" 
+                                Value="Show Employee details"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/login.aspx" Text="Check Data entery" 
+                                Value="Check Data entery"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Aboutus.aspx" Text="About Us" Value="About Us">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Contactus.aspx" Text="Contact US" 
+                            Value="Contact US"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td width="40%" style="width: 80%">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td width="40%" style="width: 80%">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style2" >
+                <marquee> Develop by : Gajjar shraddha</marquee></td>
+        </tr>
+    </table>
+    </form>
+  <p>
+      &nbsp;</p>
+  </body>
+</html>
